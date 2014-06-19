@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>angular-markdown-linkify demo</title>
+</head>
+<body ng-app="myApp" ng-controller="AppController">
+
+<h3>Default</h3>
+<p ng-repeat="paragraph in paragraphs" ng-bind-html="paragraph | markdownLinkify"></p>
+
+<h3>Optional 'target' parameter</h3>
+<p ng-repeat="paragraph in paragraphs" ng-bind-html="paragraph | markdownLinkify:'_blank'"></p>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="angular-markdown-linkify.js"></script>
+<!--<script src="angular-markdown-linkify.min.js"></script>-->
+<script>
+angular.module('myApp', ['ngSanitize', 'angular-markdown-linkify'])
+    .controller('AppController', function ($scope) {
+        $scope.paragraphs = [
+            'Nunquam demitto accentor. [Go to google](https://www.google.com/ "Go To Google.com"). Compaters assimilant.',
+            'Cur abactus resistere? [Domuss ridetis!](<https://www.gmail.com/> "Nunquam carpseris fermium."). Fortiss messis.',
+            'Nunquam convertam plasmator [Vortexs potus!](https://www.youtube.com/). ' +
+                    'Contencios credere. [Accolas peregrinatione](https://www.youtube.com/ "Go to youtube.com").',
+            'Sunt planeta unda, omnes [fiscinaes](http://www.example.com) demitto camerarius, noster frondatores.'
+        ];
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+    "name": "angular-markdown-linkify",
+    "version": "0.0.1",
+    "authors": [
+        "Topaz Bar <topaz1008@gmail.com>"
+    ],
+    "description": "Markdown linkify filter for Angular.js",
+    "license": "MIT",
+    "main": "angular-markdown-linkify.js",
+    "keywords": [
+        "angular",
+        "markdown",
+        "linkify"
+    ],
+    "ignore": [
+        "bower_components"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "angular": "1.2.*",
+        "angular-sanitize": "1.2.*"
+    }
+}

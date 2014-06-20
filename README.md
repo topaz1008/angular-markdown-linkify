@@ -2,10 +2,24 @@ angular-markdown-linkify
 ============================
 
 This filter must be used with `ngSanitize` module and the `ng-bind-html` directive.
+It has no other dependencies.
 
 Parses markdown links of the form `[Go to google](https://www.google.com/ "Go To Google.com")`
 
 The regex pattern was adopted from [js-markdown-extra](https://github.com/tanakahisateru/js-markdown-extra)
+
+Installation
+--------------
+
+Install via bower
+
+    bower install angular-markdown-linkify --save
+
+And include in your html
+
+```html
+<script src="bower_components/angular-markdown-linkify/angular-markdown-linkify.js"></script>
+```
 
 Usage
 --------------

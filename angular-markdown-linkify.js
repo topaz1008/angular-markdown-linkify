@@ -3,7 +3,7 @@
 
     /**
      * @ngdoc filter
-     * @name markdownLinks
+     * @name markdownLinkify
      *
      * @param target {String}
      *

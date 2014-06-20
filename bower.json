@@ -15,9 +15,9 @@
     "ignore": [
         "bower_components"
     ],
-    "dependencies": {},
-    "devDependencies": {
+    "dependencies": {
         "angular": "1.2.*",
         "angular-sanitize": "1.2.*"
-    }
+    },
+    "devDependencies": {}
 }
